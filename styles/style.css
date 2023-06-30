@@ -1,0 +1,213 @@
+:root {
+/* Переменные font-size */
+    --font-size-header: 60px;
+    --font-size-subHeader: 40px;
+    --font-size-link: 20px;
+    --font-size-main: 18px;
+    --font-size-info: 14px;
+
+/* Переменные font-weight */
+    --font-weight-main: 400;
+  
+/* переменные color */
+    --font--color-link: #4C5866;
+    --font--color-main: #85859B;
+    --font--color-accent: #7875FE;
+
+/* переменные анимации */
+    --transition: .4s;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    object-fit: contain;
+    object-position: center center;
+  }
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+/* Стили для Header */
+.header {
+    border-bottom: 1px solid #DDDDDD;
+}
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+
+  }
+.header__logo {
+    margin-right: 40px;
+}
+
+.header__nav {
+    margin-right: 20px;
+}
+.header__nav ul {
+    display: flex;
+    font-size: var(--font-size-link);
+    color: var(--font--color-link);
+  }
+
+.header__nav ul li {
+    position: relative;
+    min-width: 52px;
+    padding: 0 10px;
+    transition: color var(--transition) ;
+    cursor: pointer;
+  }
+.header i {
+    color: var(--font--color-link);
+    font-size: 24px;
+    cursor: pointer;
+    transition: color var(--transition) ;
+}
+.header__nav ul li::after {
+    position: absolute;
+    content:"";
+    width: 0;
+    height: 1px;
+    background: #7775feb3;
+    bottom: 0;
+    right: 0;
+    left: 10px;
+    transition: all .8s;   
+  } 
+.header__nav ul li:hover::after {
+    width: 84%;
+}
+.header__nav ul li:hover {
+    display: inline;
+    color: var(--font--color-accent);
+}
+.header i:hover {
+    color: var(--font--color-accent);
+}
+
+/* Стили для Main */
+
+.main__content {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.content h1 {
+    font-size: var(--font-size-header);
+    font-weight: var(--font-weight-main);
+    margin-bottom: 50px;
+    color: var(--font--color-link);
+}
+
+.content p {
+    max-width: 445px;
+    font-size: var(--font-size-main);
+    color: var(--font--color-main);
+    margin-bottom: 50px;
+}
+
+button {
+    text-align: start;
+    padding: 25px 90px;
+    background: none;
+    border: solid 1px var(--font--color-accent);
+    color: var(--font--color-accent); 
+    transition: var(--transition);
+}
+button:hover {
+    background: #7875FE;
+    border: solid 1px #7875FE;
+    color: #ffffff; 
+}
+button:active {
+    background: #4946B4;
+    border: solid 1px #4946B4;
+    color: #ffffff; 
+    transition: 0.1s;
+}
+
+/* Стили для карточек результата*/
+
+.result {
+    background-color: #d0d0d0;
+    padding-top: 100px;
+}
+
+.result__cards {
+   display: flex;
+   justify-content: space-between;
+}
+.result__card {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    border-top: 1px solid #C0C0C0;
+    padding: 20px 0;
+    margin-right: 10px;
+}
+.result__card:last-child() {
+    margin-right: 0;
+}
+.result__card img {
+    margin-right: 20px;
+}
+.result__card h3 {
+    font-size: var(--font-size-main);
+    color: #666666;
+    text-transform: uppercase;
+}
+.result__card p {
+    font-size: var(--font-size-main);
+    color: var(--font--color-main);
+}
+
+/* стили для About*/
+.about {
+    background-color: #d0d0d0;
+    padding: 100px 0 150px 0;
+}
+.about__content {
+    display: flex;
+    justify-content: space-between;
+}
+.about__img {
+    width: 730px;
+    height: 564px;
+}
+.about__img img{
+    width: 100%;
+}
+.about__discription {
+    width: 350px;
+}
+
+.about__discription h2 {
+    font-weight: var(--font-weight-main);
+    font-size: var(--font-size-subHeader);
+    color: #666666;
+}
+.about__discription p {
+    font-size: var(--font-size-main);
+    color: var(--font--color-main);
+    line-height: 30px;
+}
