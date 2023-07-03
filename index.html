@@ -17,17 +17,20 @@
         <div class="wrapper">
             <div class="header__content">
                 <div class="header__logo">
-                <img src="./assets/logo.svg" alt="Simple">
-            </div>
-            <div class="header__nav">
-                <ul>
-                    <li>Продукция</li>
-                    <li>Материалы</li>
-                    <li>О нас</li>
-                    <li>Контакты</li>
-                </ul>
-            </div>
-            <i class='bx bx-log-in-circle'></i>
+                    <img 
+                        src="./assets/logo.svg" 
+                        alt="simple"
+                    >
+                </div>
+                <div class="header__nav">
+                    <ul>
+                        <li>Продукция</li>
+                        <li>Материалы</li>
+                        <li>О нас</li>
+                        <li>Контакты</li>
+                    </ul>
+                </div>
+                <i class='bx bx-log-in-circle'></i>
             </div>
         </div>
     </div>
@@ -44,7 +47,11 @@
                     <button>Каталог</button>
                 </div>
                 <div class="main__img">
-                    <img src="./assets/main.png" alt="preview">
+                    <picture>
+                        <source media="(max-width:855px)" srcset="./assets/main_690.png">
+                        <source media="(min-width:690px)" srcset="./assets/main.png">
+                        <img src="./assets/main.png" alt="paper">
+                      </picture>
                 </div>
             </div>  
         </div>
@@ -54,21 +61,27 @@
         <div class="wrapper">
             <div class="result__cards">
                 <div class="result__card">
-                    <img src="./assets/v1.png" alt="result">
+                    <div class="result__card_img">
+                        <img src="./assets/v1.png" alt="result">
+                    </div>
                     <div class="result__card_content">
                         <h3>v.1</h3>
                         <p>Результат Вашего обучения</p>
                     </div>
                 </div>
                 <div class="result__card">
-                    <img src="./assets/v2.png" alt="result">
+                    <div class="result__card_img">
+                        <img src="./assets/v2.png" alt="result">
+                    </div>
                     <div class="result__card_content">
                         <h3>v.1</h3>
                         <p>Результат Вашего обучения</p>
                     </div>
                 </div>
                 <div class="result__card">
-                    <img src="./assets/v3.png" alt="result">
+                    <div class="result__card_img">
+                        <img src="./assets/v3.png" alt="result">
+                    </div>
                     <div class="result__card_content">
                         <h3>v.1</h3>
                         <p>Результат Вашего обучения</p>
@@ -76,9 +89,11 @@
                 </div>
             </div>  
         </div>
-        <div class="about">
-            <div class="wrapper">
-              <div class="about__content">
+    </div>
+
+    <div class="about">
+        <div class="wrapper">
+            <div class="about__content">
                 <div class="about__img">
                     <img src="./assets/about.png" alt="about">
                 </div>
@@ -94,8 +109,126 @@
                         является непрерывно движущаяся (как транспортер) металлическая или капроновая сетка.
                     </p>
                 </div>
-              </div>
             </div>
+        </div>
+    </div>
+
+    <div class="goods">
+        <div class="wrapper">
+            <div class="goods__content">
+                <div class="goods__cards">
+                    <div class="goods__card">
+                        <img src="./assets/card1.png" alt="">
+                        <h3>Упаковка</h3>
+                        <span>Тираж: от 50 штук</span>
+                        <p>
+                            Сделано из крафт-бумаги или плотного картона. 
+                            Упаковки имеют различные формы и расцветки, изготовим форму под заказ.
+                        </p>
+                        <a href="#">
+                            Подробнее
+                            <i class='bx bx-arrow-back bx-flip-horizontal' ></i>
+                        </a>
+                    </div>
+                    <div class="goods__card">
+                        <img src="./assets/card2.png" alt="">
+                        <h3>Упаковка</h3>
+                        <span>Тираж: от 200 штук</span>
+                        <p>
+                            С прямоугольным дном. От 10 см до 60 см по высоте. 
+                            Материалы: картон, крафт-бумага. Различные расцветки и дизайн.
+                        </p>
+                        <a href="#">
+                            Подробнее
+                            <i class='bx bx-arrow-back bx-flip-horizontal' ></i>
+                        </a>
+                    </div>
+                    <div class="goods__card">
+                        <img src="./assets/card3.png" alt="">
+                        <h3>Упаковка</h3>
+                        <span>Тираж: от 30 штук</span>
+                        <p>
+                            Подойдет для документов и других бумаг. Различные расцветки, размеры и плотность. 
+                            Материал: прессованная бумага.
+                        </p>
+                        <a href="#">
+                            Подробнее
+                            <i class='bx bx-arrow-back bx-flip-horizontal' ></i>
+                        </a>
+                    </div>
+                    <div class="goods__card">
+                        <img src="./assets/card4.png" alt="">
+                        <h3>Упаковка</h3>
+                        <span>Тираж: от 100 штук</span>
+                        <p>
+                            Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. 
+                            Изготовим в кратчайшие сроки.
+                        </p>
+                        <a href="#">
+                            Подробнее
+                            <i class='bx bx-arrow-back bx-flip-horizontal' ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sponsors">
+        <div class="wrapper">
+            <div class="sponsors__inner">
+                <div class="sponsor__logo">
+                    <img src="./assets/logo1.png" alt="hanhemuhle">
+                </div>
+                <div class="sponsor__logo">
+                    <img src="./assets/logo2.png" alt="canson">
+                </div>
+                <div class="sponsor__logo">
+                    <img src="./assets/logo3.png" alt="royal talens">
+                </div>
+                <div class="sponsor__logo">
+                    <img src="./assets/logo4.png" alt="fabriano">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="preview">
+        <div class="wrapper">
+            <div class="preview__inner">
+                <div class="preview__content">
+                <h3>Simple скетчбук</h3>
+                <p> 
+                    80 листов, твердая обложка, бумага  Fabriano 200 г/м2. 
+                    Подойдет и для графики и для акварели. Для самых смелых творческих замыслов!
+                </p>
+                <button>Купить</button>
+                </div>
+                <div class="preview__img">
+                    <picture>
+                        <source media="(max-width:855px)" srcset="./assets/book_690.png">
+                        <source media="(min-width:690px)" srcset="./assets/book.png">
+                        <img src="./assets/book.png" alt="book">
+                      </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="wrapper">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <img src="./assets/footer.svg" alt="simple">
+                </div>
+                <div class="footer__social">
+                    <i class='bx bxl-facebook-square'></i>
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                    <i class='bx bxl-youtube'></i>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
