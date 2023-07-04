@@ -148,6 +148,9 @@ body.lock {
     border-top: 1px solid #DDDDDD;
     z-index: 2;
 }
+.header__content i:hover { 
+    color: #4946B4;
+}
 .header__content i::before {
     vertical-align: middle;
     z-index: 2;
