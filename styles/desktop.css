@@ -38,7 +38,9 @@ img {
     object-fit: contain;
     object-position: center center;
   }
-
+.burger {
+    display: none;
+}
 .wrapper {
     max-width: 1140px;
     margin: 0 auto;
@@ -133,6 +135,7 @@ img {
 
 .main__content {
     display: flex;
+    flex: 90% 10%;
     justify-content: space-between;
 
     padding-top: 90px;
@@ -160,9 +163,20 @@ img {
 @media (max-width: 690px) {
     .content h1 {
         font-size: 50px;
+        margin-bottom: 40px;
     }
     .content p {
         font-size: 18px;
+    }
+}
+@media (max-width: 510px) {
+    .content h1 {
+        font-size: 33px;
+        margin-bottom: 20px;
+    }
+    .content p {
+        font-size: 15px;
+        margin-bottom: 20px;
     }
 }
 /* Стили для карточек результата*/
@@ -207,6 +221,14 @@ img {
         flex-wrap: wrap;
     }
 }
+@media (max-width: 510px) {
+    .result__card_img {
+        margin-bottom: 5px;
+    }
+    .result__card p {
+        margin-top: 5px;
+    }
+}
 
 /* стили для About*/
 .about {
@@ -227,7 +249,6 @@ img {
 .about__discription {
     width: 350px;
 }
-
 .about__discription h2 {
     font-weight: var(--font-weight-main);
     font-size: var(--font-size-subHeader);
@@ -241,6 +262,24 @@ img {
 @media (max-width: 690px) {
     .about {
         padding: 50px 10px 50px 10px;
+    }
+}
+@media (max-width: 510px) {
+    .about__content {
+        flex-direction: column;
+    }
+    .about__img {
+        width: 330px;
+        height: 280px;
+    }
+    .about__discription h2 {
+        font-size: 24px;
+    }
+    .about__discription {
+        width: 100%;
+    }
+    .about__discription p {
+        font-size: 16px;
     }
 }
 /* Стили для Товаров */
@@ -294,6 +333,11 @@ img {
 .goods__card a:hover {
     color: #4946B4;
 }
+@media (max-width: 590px) {
+ .goods__cards {
+    justify-content: center;
+ }
+}
 /* Стили для спонсоров*/
 
 .sponsors {
@@ -306,6 +350,19 @@ img {
 .sponsor__logo {
     max-width: 255px;
     margin: 0 10px;
+}
+@media (max-width: 510px) {
+    .sponsors__inner {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .sponsor__logo {
+        width: 240px;
+        margin: 0;
+    }
+    .sponsor__logo {
+        margin-bottom: 10px;
+    }
 }
 
 /* Стили для preview */
@@ -336,6 +393,20 @@ img {
 @media (max-width: 690px) {
     .preview__content h3 {
         font-size: 30px;
+    }
+}
+@media (max-width: 510px) {
+    .preview__inner {
+        flex-direction: column;
+    }
+    .preview__img {
+        margin: 0 auto;
+        order: -1;
+        max-width: 449px;
+    }
+    .preview__content p {
+        font-size: 16px;
+        max-width: none;
     }
 }
 /* Стили для footer */
@@ -383,4 +454,10 @@ button:active {
     border: solid 1px #4946B4;
     color: #ffffff; 
     transition: 0.1s;
+}
+
+@media (max-width: 690px) {
+    button {
+        padding: 15px 40px;
+    }
 }

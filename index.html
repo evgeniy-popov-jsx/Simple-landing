@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <link href="./styles/desktop.css" rel="stylesheet" media="screen and (min-width: 520px)">
+    <link href="./styles/mobile.css" rel="stylesheet" media="screen and (max-width: 519px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Simple</title>
 </head>
@@ -21,6 +22,14 @@
                         src="./assets/logo.svg" 
                         alt="simple"
                     >
+                </div>
+                <div class="burger">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="toggle">
+                        <div class="bars" id="bar1"></div>
+                        <div class="bars" id="bar2"></div>
+                        <div class="bars" id="bar3"></div>
+                    </label>
                 </div>
                 <div class="header__nav">
                     <ul>
@@ -48,6 +57,7 @@
                 </div>
                 <div class="main__img">
                     <picture>
+                        <source media="(max-width:606px)" srcset="./assets/main_510.png">
                         <source media="(max-width:855px)" srcset="./assets/main_690.png">
                         <source media="(min-width:690px)" srcset="./assets/main.png">
                         <img src="./assets/main.png" alt="paper">
@@ -127,7 +137,7 @@
                         </p>
                         <a href="#">
                             Подробнее
-                            <i class='bx bx-arrow-back bx-flip-horizontal' ></i>
+                            <i class='bx bx-arrow-back bx-flip-horizontal'></i>
                         </a>
                     </div>
                     <div class="goods__card">
@@ -197,15 +207,16 @@
         <div class="wrapper">
             <div class="preview__inner">
                 <div class="preview__content">
-                <h3>Simple скетчбук</h3>
-                <p> 
-                    80 листов, твердая обложка, бумага  Fabriano 200 г/м2. 
-                    Подойдет и для графики и для акварели. Для самых смелых творческих замыслов!
-                </p>
-                <button>Купить</button>
+                    <h3>Simple скетчбук</h3>
+                    <p>
+                        80 листов, твердая обложка, бумага  Fabriano 200 г/м2. 
+                        Подойдет и для графики и для акварели. Для самых смелых творческих замыслов!
+                    </p>
+                    <button>Купить</button>
                 </div>
                 <div class="preview__img">
                     <picture>
+                        <source media="(max-width:510px)" srcset="./assets/book_510.png">
                         <source media="(max-width:855px)" srcset="./assets/book_690.png">
                         <source media="(min-width:690px)" srcset="./assets/book.png">
                         <img src="./assets/book.png" alt="book">
@@ -229,6 +240,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
+<script src="./script.js"></script>
 </body>
 </html>
